@@ -8,48 +8,63 @@ main{
 }
 
 h1 {
-    color: #185A82;
+    color: #0b2f46;
     
 }
 
-a {
-    height: 20;
+
+footer {
+    background-color:  #eff3f5 ;
 }
 
 /* Classes */
 
     /* General selectors */
     .columns {
-        background-color:  #0b2f46 ; /* Primary Blue color #185A82 */
+        background-color:#eff3f5; /* Primary Blue color #185A82 */
         height: 150px;
         padding: 30px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
-    footer {
-        background-color:  #0b2f46 ;
-    }
+
     .columns .column {
         padding: 20px;
     }
 
     .columns p{
-        color: white;
+        color: black;
     }
 
     .columns a{
-        color: white;
+        color: black;
+    }
+
+    .column a:hover{
+        color: #0c2535;
     }
 
     .logo{
         padding: 20px;
     }
 
-    .link{
-        color: white;
-        padding: 20px;
+    .item{
+        color: black;
         text-decoration: none;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    
+    #media-logos{
+        display: flex;
+        vertical-align: middle;
+    }
+    .media-logo{
+        height: 30px;
+        width: auto;
+        padding-right: 10px;
     }
     /* General selectors End */
 
@@ -88,6 +103,11 @@ a {
         width: 100%;
     }
 
+    #itemlist a:hover{
+        background-color: #0b2f46;
+        color: white;
+    }
+
     #macy {
         width: 100px;
     }
@@ -104,9 +124,8 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding: 7px;
+        /* padding: 7px; */
     }
-
 
     /* General Selectors End */
 
