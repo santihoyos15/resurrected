@@ -3,10 +3,6 @@ body{
     font-family: "Open Sans";
 }
 
-main{
-    padding: 30px;
-}
-
 h1 {
     color: #0b2f46;
 }
@@ -18,53 +14,62 @@ footer {
 
 /* Classes */
 
-    /* General selectors */
-    .columns {
-        background-color:#eff3f5; /* Primary Blue color #185A82 */
-        height: 150px;
-        padding: 30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+.landing-container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
 
-    .columns .column {
-        padding: 20px;
-    }
+.centered{
+    position: absolute;
+    top: 43%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    text-shadow: 5px 5px 20px black;
+    line-height:normal ;
+}
 
-    .columns p{
-        color: black;
-    }
+.columns {
+    background-color:#eff3f5; /* Primary Blue color #185A82 */
+    height: 150px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
-    .columns a{
-        color: black;
-    }
+.columns .column {
+    padding: 20px;
+}
 
-    .column a:hover{
-        color: #0c2535;
-    }
+.columns p{
+    color: black;
+    user-select: none;
+}
+
+.columns a{
+    color: black;
+}
+
+.column a:hover{
+    color: #0c2535;
+}
 
 
-    .item{
-        color: black;
-        text-decoration: none;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+.item{
+    color: black;
+    padding: 3px 12px 3px 12px;
+    user-select: none;
+}
 
-    
-    #media-logos{
-        display: flex;
-        vertical-align: middle;
-    }
-    .media-logo{
-        height: 30px;
-        width: auto;
-        padding-right: 10px;
-    }
-    /* General selectors End */
 
-    /* Specific selectors*/        
+
+.media-logo{
+    height: 30px;
+    width: auto;
+    padding: 10px;
+}
 
 /* Classes End */
 
@@ -73,9 +78,13 @@ footer {
     /* General Selectors */
     #name{
         margin: 0;
-        padding: 9px 0px 9px 9px;
-        height: inherit;
+        padding: 9px 9px 9px 17px;
         font-size:28px;
+        user-select: none;
+    }
+
+    #name, a{
+        text-decoration: none;
     }
 
     #home-header {
@@ -120,12 +129,7 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        vertical-align: middle;
         /* padding: 7px; */
     }
-
-    /* General Selectors End */
-
-    /* Specific Selectors */
-    
-    /* Specific Selectors End */
 /* Id's End */
