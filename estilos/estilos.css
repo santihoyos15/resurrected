@@ -1,0 +1,116 @@
+body{
+    margin: 0%;
+    font-family: "Open Sans";
+}
+
+main{
+    padding: 30px;
+}
+
+h1 {
+    color: #185A82;
+    
+}
+
+a {
+    height: 20;
+}
+
+/* Classes */
+
+    /* General selectors */
+    .columns {
+        background-color:  #0b2f46 ; /* Primary Blue color #185A82 */
+        height: 150px;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    footer {
+        background-color:  #0b2f46 ;
+    }
+    .columns .column {
+        padding: 20px;
+    }
+
+    .columns p{
+        color: white;
+    }
+
+    .columns a{
+        color: white;
+    }
+
+    .logo{
+        padding: 20px;
+    }
+
+    .link{
+        color: white;
+        padding: 20px;
+        text-decoration: none;
+    }
+    /* General selectors End */
+
+    /* Specific selectors*/        
+
+/* Classes End */
+
+
+/* Id's */
+    /* General Selectors */
+    #home-header {
+        background-color: white;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #home-header span{
+        float: left;
+        padding-right: 20px;
+    }
+
+    #home-header .navitem{
+        float: left;
+        text-align: center;
+        padding: 16px 16px;
+        text-decoration: none;
+        color: black;
+        font-size: medium;
+    }
+
+    #itemlist {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    #macy {
+        width: 100px;
+    }
+    
+    #logo {
+        margin: 0;
+    }
+
+    #home-pic {
+        width: 100%;
+    }
+
+    #facebook-link-flexbox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 7px;
+    }
+
+
+    /* General Selectors End */
+
+    /* Specific Selectors */
+    
+    /* Specific Selectors End */
+/* Id's End */
