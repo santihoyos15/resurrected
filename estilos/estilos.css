@@ -18,6 +18,7 @@ footer {
     position: relative;
     text-align: center;
     color: white;
+    user-select: none;
 }
 
 .centered{
@@ -26,8 +27,9 @@ footer {
     left: 70%;
     transform: translate(-50%, -50%);
     font-size: 100px;
-    text-shadow: 5px 5px 20px black;
+    text-shadow: 7px 7px 5px black;
     line-height:normal ;
+    user-select: none;
 }
 
 .columns {
