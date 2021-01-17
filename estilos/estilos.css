@@ -1,6 +1,7 @@
 body{
     margin: 0%;
     font-family: "Open Sans";
+
 }
 
 h1 {
@@ -29,7 +30,7 @@ footer {
     top: 43%;
     left: 70%;
     transform: translate(-50%, -50%);
-    font-size: 60px;
+    font-size: 6vw;
     text-shadow: 6px 6px 5px black;
     line-height:normal ;
     user-select: none;
