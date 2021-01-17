@@ -47,6 +47,8 @@ footer {
 
 .columns .column {
     padding: 20px;
+    width: 50%;
+    text-align: center;
 }
 
 .columns p{
@@ -60,6 +62,7 @@ footer {
 
 .column a:hover{
     color: #0c2535;
+
 }
 
 
