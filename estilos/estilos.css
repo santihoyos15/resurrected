@@ -38,7 +38,6 @@ footer {
 
 .columns {
     background-color:#eff3f5; /* Primary Blue color #185A82 */
-    height: 150px;
     padding: 30px;
     display: flex;
     flex-direction: row;
@@ -117,6 +116,12 @@ footer {
         font-size: medium;
     }
 
+    .my-skills-container{
+        display: flex;
+        justify-content:space-between;
+        height: 300px;
+    }
+
     #itemlist {
         display: flex;
         flex-direction: row;
@@ -141,4 +146,5 @@ footer {
         vertical-align: middle;
         /* padding: 7px; */
     }
+
 /* Id's End */
