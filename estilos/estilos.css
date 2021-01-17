@@ -47,6 +47,7 @@ footer {
 
 .columns .column {
     padding: 20px;
+    width: 50%;
 }
 
 .columns p{
@@ -138,4 +139,8 @@ footer {
         vertical-align: middle;
         /* padding: 7px; */
     }
-/* Id's End */
+
+@media screen and (max-width:800px) {
+    .column {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
