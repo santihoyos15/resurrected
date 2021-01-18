@@ -13,7 +13,7 @@ var keyCodes = {
 
 //Sisable scrolling
 playGame.addEventListener("click", disableScrolling);
-stopGame.addEventListener("click", enableScrolling)
+stopGame.addEventListener("click", enableScrolling);
 // Village pic
 var villagePic = new Image();
 villagePic.src = "../images/village/tile.png";
@@ -56,6 +56,7 @@ function drawPig(evento){
     drawingPlace.drawImage(chicken, 150, 200);
     drawingPlace.drawImage(wolf, 400, 300);
 
+    //The animal can't leave the square
     if(x < 0){
         x = x + 10
     }
@@ -83,10 +84,11 @@ function aleatory(min, max){ //Max Min Random number generator
 function disableScrolling(){
     let x=window.scrollX;
     let y=window.scrollY;
-    window.onscroll=function(){window.scrollTo(x, y);};
-    alert("Move the arrows!")
+    window.onscroll = () => { window.scrollTo(x, y); };
+    alert("Move the arrows!");
 }
 
 function enableScrolling(){
-    window.onscroll=function(){};
+    window.onscroll = () => { };
+    alert("Don't worry, you can scroll again");
 }
