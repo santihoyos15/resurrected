@@ -64,14 +64,15 @@ footer {
 
 }
 
+.my-skills{
+    color: #0c2535;
+}
 
 .item{
     color: black;
     padding: 3px 12px 3px 12px;
     user-select: none;
 }
-
-
 
 .media-logo{
     height: 30px;
@@ -116,11 +117,6 @@ footer {
         font-size: medium;
     }
 
-    .my-skills-container{
-        display: flex;
-        justify-content:space-between;
-        height: 300px;
-    }
 
     #itemlist {
         display: flex;
@@ -137,6 +133,16 @@ footer {
 
     #home-pic {
         width: 100%;
+    }
+
+    #skills-list{
+        display: flex;
+        justify-content: center;
+    }
+
+    .skill{
+        padding: 10px;
+        list-style-type: none;
     }
 
     #facebook-link-flexbox{

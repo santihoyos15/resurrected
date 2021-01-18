@@ -1,7 +1,7 @@
 // Canvas definition
 var d = document.getElementById("eiffel");
 var canvas = d.getContext("2d");
-var colorStyle = "#521751";
+var colorStyle = "#0b2f46";
 var canvasHeight = d.height;
 var canvasWidth = d.width;
 
@@ -29,7 +29,7 @@ function drawEiffel(){
     {
         iy = canvasWidth / lines * l;
         fx = canvasWidth / lines * (l + 1);
-        drawLine(colorStyle , 1 , iy, fx, 299);
+        drawLine(colorStyle , 1 , iy, fx, canvasWidth - 1);
     }
 
 
