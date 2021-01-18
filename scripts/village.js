@@ -1,11 +1,8 @@
-for (i = 0; i < 20; i++){
-    console.log(aleatory(0, 100));
-}
-
 var village = document.getElementById("village");
 var drawingPlace = village.getContext("2d");
-var elements = document.getElementsByTagName("body");
-var bodyObject = elements[0];
+var buttons = document.getElementsByTagName("button");
+var playGame = buttons[0];
+var stopGame = buttons[1];
 
 var keyCodes = {
     LEFT : 37,
@@ -15,13 +12,12 @@ var keyCodes = {
 }
 
 //Sisable scrolling
-village.addEventListener("click", disableScrolling);
-bodyObject.addEventListener("click", enableScrolling);
-
+playGame.addEventListener("click", disableScrolling);
+stopGame.addEventListener("click", enableScrolling)
 // Village pic
-var imagen = new Image();
-imagen.src = "../images/village/tile.png";
-imagen.addEventListener("load" , drawPig);
+var villagePic = new Image();
+villagePic.src = "../images/village/tile.png";
+villagePic.addEventListener("load" , drawPig);
 // Cow pic
 cow = new Image();
 cow.src = "../images/village/cow.png";
@@ -39,14 +35,8 @@ var x = 250;
 var y = 250;
 document.addEventListener("keydown" , drawPig);
 
-function draw(evento){
-    console.log(evento);
-}
-
-
-
 function drawPig(evento){
-    drawingPlace.drawImage(imagen , 0, 0);
+    drawingPlace.drawImage(villagePic , 0, 0);
     if(evento.keyCode === keyCodes.LEFT){
         x = x - 10;
     }
@@ -94,6 +84,7 @@ function disableScrolling(){
     let x=window.scrollX;
     let y=window.scrollY;
     window.onscroll=function(){window.scrollTo(x, y);};
+    alert("Move the arrows!")
 }
 
 function enableScrolling(){
