@@ -1,5 +1,6 @@
 var village = document.getElementById("village");
 var drawingPlace = village.getContext("2d");
+
 var buttons = document.getElementsByTagName("button");
 var playGame = buttons[0];
 var stopGame = buttons[1];
@@ -11,32 +12,36 @@ var keyCodes = {
     DOWN : 40
 }
 
-//Sisable scrolling
+// Disable scrolling
 playGame.addEventListener("click", disableScrolling);
 stopGame.addEventListener("click", enableScrolling);
 // Village pic
 var villagePic = new Image();
-villagePic.src = "../images/village/tile.png";
-villagePic.addEventListener("load" , drawPig);
-// Cow pic
-cow = new Image();
-cow.src = "../images/village/cow.png";
-// Chicken
-chicken = new Image();
-chicken.src = "../images/village/chicken.png";
-// Pig 
-pig = new Image();
-pig.src = "../images/village/pig.png";
-//Wolf
-wolf = new Image();
-wolf.src = "../images/village/wolf.png";
+villagePic.src = "images/village/tile.png";
+villagePic.addEventListener("load", drawTile);
+// // Cow pic
+var cow = new Image();
+cow.src = "images/village/cow.png";
+villagePic.addEventListener("load", drawCow);
+// // Chicken
+var chicken = new Image();
+chicken.src = "images/village/chicken.png";
+villagePic.addEventListener("load", drawChicken);
+// // Pig 
+var pig = new Image();
+pig.src = "images/village/pig.png";
+villagePic.addEventListener("load", drawPig);
+// //Wolf
+var wolf = new Image();
+wolf.src = "images/village/wolf.png";
+villagePic.addEventListener("load", drawWolf);
+
 
 var x = 250;
 var y = 250;
 document.addEventListener("keydown" , drawPig);
 
 function drawPig(evento){
-    drawingPlace.drawImage(villagePic , 0, 0);
     if(evento.keyCode === keyCodes.LEFT){
         x = x - 10;
     }
@@ -49,12 +54,7 @@ function drawPig(evento){
     if(evento.keyCode === keyCodes.DOWN){
         y = y + 10;
     }
-
-    console.log(evento)
-    drawingPlace.drawImage(pig, x,y);
-    drawingPlace.drawImage(cow, 150, 150);
-    drawingPlace.drawImage(chicken, 150, 200);
-    drawingPlace.drawImage(wolf, 400, 300);
+    
 
     //The animal can't leave the square
     if(x < 0){
@@ -74,6 +74,29 @@ function drawPig(evento){
             y = y - 10
         }
     }
+
+    console.log(evento)
+    drawTile();
+    drawingPlace.drawImage(pig, x,y);
+    drawChicken();
+    drawCow();
+    drawWolf();
+}
+
+function drawTile(){
+    drawingPlace.drawImage(villagePic , 0, 0);
+}
+
+function drawChicken(){
+    drawingPlace.drawImage(chicken, 150, 200);
+}
+
+function drawCow(){
+    drawingPlace.drawImage(cow, 150, 150);
+}
+
+function drawWolf(){
+    drawingPlace.drawImage(wolf, 400, 300);
 }
 
 function aleatory(min, max){ //Max Min Random number generator
