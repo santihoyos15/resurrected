@@ -15,31 +15,28 @@ var keyCodes = {
 // Disable scrolling
 playGame.addEventListener("click", disableScrolling);
 stopGame.addEventListener("click", enableScrolling);
-// Village pic
-var villagePic = new Image();
-villagePic.src = "images/village/tile.png";
-villagePic.addEventListener("load", drawTile);
-// // Cow pic
-var cow = new Image();
-cow.src = "images/village/cow.png";
-villagePic.addEventListener("load", drawCow);
-// // Chicken
-var chicken = new Image();
-chicken.src = "images/village/chicken.png";
-villagePic.addEventListener("load", drawChicken);
-// // Pig 
-var pig = new Image();
-pig.src = "images/village/pig.png";
-villagePic.addEventListener("load", drawPig);
-// //Wolf
-var wolf = new Image();
-wolf.src = "images/village/wolf.png";
-villagePic.addEventListener("load", drawWolf);
 
+// Village pic
+var villagePic = createObject("images/village/tile.png", drawTile);
+// // Cow pic
+var cow = createObject("images/village/cow.png", drawCow);
+// // Chicken
+var chicken = createObject("images/village/chicken.png", drawChicken);
+// // Pig 
+var pig = createObject("images/village/pig.png", drawPig);
+// //Wolf
+var wolf = createObject("images/village/wolf.png", drawWolf);
 
 var x = 250;
 var y = 250;
 document.addEventListener("keydown" , drawPig);
+
+function createObject(image, drawFunction){
+    var animal = new Image();
+    animal.src = image;
+    animal.addEventListener("load", drawFunction);
+    return animal;
+}
 
 function drawPig(evento){
     if(evento.keyCode === keyCodes.LEFT){
@@ -112,6 +109,6 @@ function disableScrolling(){
 }
 
 function enableScrolling(){
-    window.onscroll = () => { };
+    window.onscroll = () => {};
     alert("Don't worry, you can scroll again");
 }

@@ -1,4 +1,10 @@
 # Santi
-This is my portfolio website, please don't leave soon.
+This is my portfolio website. 
+
+# Tools
+
+Created with HTML, CSS, and Javascript.
+
+
 
 

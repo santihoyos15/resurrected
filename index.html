@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/home/estilos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
@@ -17,7 +17,7 @@
             <h1 id="name">Santi</h1>
             <span id="itemlist">
                 <a class="navitem" style="background-color:#0b2f46; color: white;">Explore</a>
-                <a class="navitem" href="about me/aboutme.html">About me</a>
+                <a class="navitem" href="myskills/myskills.html">My Skills</a>
             </span>
         </div>
     </header>
@@ -28,54 +28,67 @@
     </div>
 
     <main>
+        <div id="story">
+            <h1>About Me</h1>
+            <p>
+                <canvas class="eiffel" id="eiffel" width="250px" height="250px"></canvas>
+                I'm Santiago Hoyos, I'm from Medellín Colombia, I'm 19 years old and I love
+                coding. <br>
+
+                I also have other hobbies: I love playing guitar, singing, and science.
+                I'm at the university, <br> I'm studying Sofware Development. 
+            </p>
+
+            <p>
+                I make efforts to be a good person, I love getting feedback from others,<br>
+                since getting it you'll learn faster, beacause you're not powerful enough to know<br>
+                everything.
+            </p> 
+
+            <p>
+                I love getting knowledge and debating ideas. I think it's the most powerful thing to develop our world and change<br>
+                people minds.
+            </p>
+
+        </div>
+
         <div id="games">
-            <canvas class="eiffel" id="eiffel" width="500px" height="500px"></canvas>
             <canvas width="500" height="500" id="village"></canvas>
             <div id = "buttons">
                 <button type="button" class="play">
                     Play!
                 </button>
-    
+
                 <button type="button" class="play">
                     Stop
                 </button>
             </div>
+            <div>
+                <h2 id="farm-game">Farm Game</h2>
+                <p>I made this game with the help of Basic programming course from Platzi.</p>
+            </div>
         </div>
-
-
-        <div class ="my-skills">
-            <h2>
-                My skills
-            </h2>
-        </div>
-
-        <ul id="skills-list">
-            <li class="skill">HTML</li>
-            <li class="skill">JavaScript</li>
-            <li class="skill">Python</li>
-            <li class="skill">Git</li>
-        </ul>  
 
     </main> <!-- Main End -->
 
     <footer>
         <div class="columns">
             <span class="column">
-                <p>Contact Me</p>
+                <h2>Contact Me</h2>
                 <a href="mailto:santiagohoyos2808@gmail.com">santiagohoyos2808@gmail.com</a>
             </span>
             <span class="column">
-                <p>My Work</p>
-                <a href="about me/aboutme.html">About me</a>
+                <h2>Me</h2>
+                <a href="myskills/myskills.html">My Skills</a>
             </span>
         </div>
         <div id="facebook-link-flexbox">
             <p class="item">Santiago Hoyos</p>
             <div class="item">
-                <a href="https://github.com/santihoyos15" target="_blank" ><img class="media-logo" src="images/github.png" alt="GitHub logo"></a>
-                <a href="https://www.instagram.com/santihoyos15" target="_blank"><img class="media-logo" src="images/instagram.png" alt="Instagram logo"></a>
-                <a href="https://twitter.com/santihoyos15" target="_blank"><img class="media-logo" src="images/twitter.png" alt="Twitter logo"></a>
-                <a href="https://www.linkedin.com/in/santihoyos15/" target="_blank"><img class="media-logo" src="images/linkedin.png" alt="LinkedIn logo"></a>
+                <a href="https://github.com/santihoyos15" target="_blank" ><img class="media-logo" src="images/icons/github.png" alt="GitHub logo"></a>
+                <a href="https://www.instagram.com/santihoyos15" target="_blank"><img class="media-logo" src="images/icons/instagram.png" alt="Instagram logo"></a>
+                <a href="https://twitter.com/santihoyos15" target="_blank"><img class="media-logo" src="images/icons/twitter.png" alt="Twitter logo"></a>
+                <a href="https://www.linkedin.com/in/santihoyos15/" target="_blank"><img class="media-logo" src="images/icons/linkedin.png" alt="LinkedIn logo"></a>
             </div>
         </div>
     </footer>

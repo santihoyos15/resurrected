@@ -1,12 +1,10 @@
 body{
     margin: 0%;
     font-family: "Open Sans";
-
 }
 
-h1 {
-    color: #0b2f46;
-}
+h1 {color: #0b2f46;}
+h2{color: #0b2f46;}
 
 main{
     margin: 20px;
@@ -64,9 +62,6 @@ footer {
 
 }
 
-.my-skills{
-    color: #0c2535;
-}
 
 .item{
     color: black;
@@ -86,6 +81,8 @@ footer {
 /* Id's */
     /* General Selectors */
     #name{
+        position: relative;
+        bottom: 1.8px;
         margin: 0;
         padding: 9px 9px 9px 17px;
         font-size:28px;
@@ -137,6 +134,10 @@ footer {
 
     #games{
         display: flex;
+        background-color: #0c2535;
+        padding: 2%;
+        border-radius: 5px;
+        color: #eff3f5;
     }
 
     #buttons {
@@ -149,15 +150,24 @@ footer {
         padding: 10px;
         margin: 10px;
         border-radius: 5px;
+        background-color: #ffffff;
+        color: #0c2535;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: bold;
     }
 
     #skills-list{
         display: flex;
         justify-content: center;
+        padding: 6%;
+        background-color: #0c2535;
     }
 
     .skill{
-        padding: 10px;
+        width: 70px;
+        height: 70px;
+        padding: 30px;
         list-style-type: none;
     }
 
@@ -167,6 +177,27 @@ footer {
         justify-content: center;
         vertical-align: middle;
         /* padding: 7px; */
+    }
+
+    #story{
+        margin: 2%;
+        margin-top: 4%;
+        margin-bottom: 6%;
+    }
+
+    #eiffel{
+        position: relative;
+        bottom: 27px;
+        float: right;
+
+    }
+
+    #village{
+        border-radius: 10px;
+    }
+
+    #farm-game{
+        color: #eff3f5;
     }
 
 /* Id's End */
