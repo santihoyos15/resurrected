@@ -1,4 +1,6 @@
 var village = document.getElementById("village");
+village.width = 400;
+village.height = 400; 
 var drawingPlace = village.getContext("2d");
 
 var buttons = document.getElementsByTagName("button");
@@ -27,8 +29,8 @@ var pig = createObject("images/village/pig.png", drawPig);
 // //Wolf
 var wolf = createObject("images/village/wolf.png", drawWolf);
 
-var x = 250;
-var y = 250;
+var x = village.width / 2;
+var y = village.width / 2 - 80;
 document.addEventListener("keydown" , drawPig);
 
 function createObject(image, drawFunction){
@@ -58,7 +60,7 @@ function drawPig(evento){
         x = x + 10
     }
     else{
-        if(x > 420){
+        if(x > village.width - 80){
             x = x - 10
         }
     }
@@ -67,7 +69,7 @@ function drawPig(evento){
         y = y + 10
     }
     else{
-        if(y > 420){
+        if(y > village.width - 80){
             y = y - 10
         }
     }
@@ -85,15 +87,15 @@ function drawTile(){
 }
 
 function drawChicken(){
-    drawingPlace.drawImage(chicken, 150, 200);
+    drawingPlace.drawImage(chicken, village.width / 2 - 80, village.width / 2);
 }
 
 function drawCow(){
-    drawingPlace.drawImage(cow, 150, 150);
+    drawingPlace.drawImage(cow, village.width - 90, village.width - 80);
 }
 
 function drawWolf(){
-    drawingPlace.drawImage(wolf, 400, 300);
+    drawingPlace.drawImage(wolf, village.width - 90, village.width - 130);
 }
 
 function aleatory(min, max){ //Max Min Random number generator
