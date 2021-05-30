@@ -98,11 +98,6 @@ function drawWolf(){
     drawingPlace.drawImage(wolf, village.width - 90, village.width - 130);
 }
 
-function aleatory(min, max){ //Max Min Random number generator
-    let result = Math.floor(Math.random() * (max - min + 1)) + min;
-    return result;
-}
-
 function disableScrolling(){
     let x=window.scrollX;
     let y=window.scrollY;
