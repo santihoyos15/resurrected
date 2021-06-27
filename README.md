@@ -1,9 +1,9 @@
 # Santi
 This is my portfolio website. 
 
-# Tools
+## Tools
 
 Created with HTML, CSS, and Javascript.
 
-# URL
+## URL
 https://santihoyos15.github.io/santi/index.html
