@@ -6,4 +6,4 @@ This is my portfolio website.
 Created with HTML, CSS, and Javascript.
 
 ## URL
-https://santihoyos15.github.io/santi/index.html
+santihoyos15.github.io
