@@ -1,5 +1,5 @@
 body{
-    margin: 0%;
+    margin: 0;
     font-family: "Open Sans";
 }
 
@@ -38,8 +38,8 @@ footer {
     background-color:#eff3f5; /* Primary Blue color #185A82 */
     padding: 30px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction:row;
+    justify-content:space-around;
 }
 
 .columns .column {
@@ -62,7 +62,6 @@ footer {
 
 }
 
-
 .item{
     color: black;
     padding: 3px 12px 3px 12px;
@@ -75,6 +74,14 @@ footer {
     padding: 10px;
 }
 
+.eiffel{
+    position: relative;
+    bottom: 50px;
+    float: right;
+    border-radius: 3px;
+    margin: 3%;
+
+}
 /* Classes End */
 
 
@@ -132,32 +139,6 @@ footer {
         width: 100%;
     }
 
-    #games{
-        display: flex;
-        background-color: #0c2535;
-        padding: 2%;
-        border-radius: 5px;
-        color: #eff3f5;
-        width: 96%;
-    }
-
-    #buttons {
-        display: flex;
-        flex-direction: column;
-        padding: 30px;
-    }
-
-    .play{
-        padding: 10px;
-        margin: 10px;
-        border-radius: 5px;
-        background-color: #ffffff;
-        color: #0c2535;
-        font-size: inherit;
-        font-family: inherit;
-        font-weight: bold;
-    }
-
     #skills-list{
         display: flex;
         justify-content: center;
@@ -184,24 +165,6 @@ footer {
         margin: 2%;
         margin-top: 4%;
         margin-bottom: 6%;
-    }
-
-    #eiffel{
-        position: relative;
-        bottom: 20px;
-        float: right;
-        border-radius: 3px;
-        margin: 4%;
-
-    }
-
-    #village{
-        border-radius: 10px;
-        width: 40%;
-    }
-
-    #farm-game{
-        color: #eff3f5;
     }
 
 /* Id's End */
